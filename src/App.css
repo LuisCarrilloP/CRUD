@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(de-fondo-naranja-de-1280x800-1-768x480.png);
+    background-size: cover;
+}
+
+.list-group{
+    width: 80%;
+    margin: 0 10% 0 10%;
+    list-style: none;
+}
+
+.list-group li{
+    /* border: 1px solid tomato; */
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 0 30px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.user-content{
+    display: inline-block;
+}
+
+.email{
+    font-size: small;
+    color: rgb(150, 150, 150);
+    padding: 5px 0;
+}
+
+.birthday{
+    font-size: 15px;
+}
+
+.btns{
+    position: absolute;
+    right: 18%;
+}
+
+.fa-pen-to-square, .fa-trash-can{
+    font-size: 15px;
+    margin: 0 5px;
+}
+
+.btns button{
+    border: none;
+    background-color: white;
+}
+
+.fa-trash-can{
+    color: rgb(230, 0, 0);
+}
+
+
+
+
+                            /* FORM */
+
+.form-container{
+    width: fit-content;
+    margin: 20px auto ;
+}                            
+
+input{
+    background-color: rgba(200, 200, 200, .6);
+    border: none;
+    border-radius: 4px;    
+    height: 22px;
+    padding: 0 5px;
+    margin: 6px 0;
+}
+
+.icon{
+    margin: 6px 4px 6px 20px ;
+    width: 20px;
+}
+
+#lastname{
+    margin-left: 6px ;
+}
+
+#name, #lastname{
+    width: 150px;
+}
+
+
+
+#password, #email, #birthday{
+    width: 306px;
+}
+
+.submit-btn{
+    margin-left: 20px;
+    margin-top: 6px;
+    width: 330px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(68, 191, 154);
+    color: white;
+    font-size: 13px;
+}
+
+@media screen and (max-width:600px) {
+    .form-container{
+        width: 90%;
+    }
+
+        #name, #lastname{
+        width: 100px;
+    }
+
+    #password, #email, #birthday{
+        width: 256px;
+    }
+
+    .submit-btn{
+        width: 90%;
+    }
+}
